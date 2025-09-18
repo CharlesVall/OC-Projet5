@@ -1,0 +1,21 @@
+@use '../../../styles/abstracts/variables' as vars;
+
+.error-404-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  color: vars.$main-color;
+  gap: 5rem;
+  flex-direction: column;
+  .error-404-title {
+    font-size: 18rem;
+    text-align: center;
+    line-height: 16rem;
+  }
+  .error-404-link {
+    color: black;
+    text-decoration: underline;
+  }
+}
+
