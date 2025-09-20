@@ -1,0 +1,7 @@
+@use '@styles/abstracts/variables' as *;
+
+.summary__wrapper {
+  background-color: $main-color;
+  border-radius: 0.4rem;
+  padding: 0.7rem 1.3rem 0.7rem 1rem;
+}

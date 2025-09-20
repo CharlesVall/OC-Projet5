@@ -1,19 +1,19 @@
-@use '../../../styles/abstracts/variables' as vars;
+@use '@styles/abstracts/variables' as *;
 
-.error-404-wrapper {
+.not-found {
   display: flex;
   justify-content: center;
   align-items: center;
   height: auto;
-  color: vars.$main-color;
+  color: $main-color;
   gap: 5rem;
   flex-direction: column;
-  .error-404-title {
+  .not-found__title {
     font-size: 18rem;
     text-align: center;
-    line-height: 16rem;
+    line-height: 13rem;
   }
-  .error-404-link {
+  .not-found__link {
     color: black;
     text-decoration: underline;
   }

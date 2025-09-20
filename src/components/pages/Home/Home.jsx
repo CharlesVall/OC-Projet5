@@ -1,3 +1,14 @@
+import './Home.scss'
+import HomeGallery from './HomeGallery/HomeGallery'
+import Hero from '@/components/commons/Hero/Hero.jsx'
+import homeHeroImg from '@/assets/IMG.png'
+
 export default function Home () {
-  return (<h1>Home</h1>)
+  return (
+    <section className="home">
+      <Hero heroTitle="Chez vous, partout et ailleurs" imgUrl={homeHeroImg}/>
+      <HomeGallery />
+    </section>
+  )
 }
+
