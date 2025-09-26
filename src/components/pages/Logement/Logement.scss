@@ -1,0 +1,58 @@
+@use '@styles/abstracts/variables' as *;
+@use '@styles/abstracts/mixins' as *;
+
+.logement {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  .logement__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    @include respond-to(mobile) {
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+    .logement__title-tags {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      h1 {
+        color: $main-color;
+        line-height: 2rem;
+      }
+      h2 {
+        color: black;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+    }
+    .logement__host-stars {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .star-rating {
+        order: 1;
+      }
+      .host-wrapper {
+        order: 2;
+      }
+      @include respond-to(mobile) {
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+  }
+  .logement__summaries {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    align-items: start;
+    gap: 8rem;
+
+    @include respond-to(mobile) {
+      grid-template-columns: 1fr;
+      gap:2rem
+    }
+  }
+}

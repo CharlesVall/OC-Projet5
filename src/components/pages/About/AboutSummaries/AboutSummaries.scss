@@ -1,0 +1,17 @@
+@use '@styles/abstracts/mixins' as *;
+
+.about__summaries {
+  display: flex;
+  gap: 2rem;
+  margin: auto;
+  margin-top: 3rem;
+  flex-direction: column;
+  max-width: 60%;
+  font-weight: 400;
+  @include respond-to(tablet) {
+    max-width: 80%;
+  }
+  @include respond-to(mobile) {
+    max-width: 100%;
+  }
+}

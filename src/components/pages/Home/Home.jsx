@@ -6,9 +6,8 @@ import homeHeroImg from '@/assets/IMG.png'
 export default function Home () {
   return (
     <section className="home">
-      <Hero heroTitle="Chez vous, partout et ailleurs" imgUrl={homeHeroImg}/>
+      <Hero title={"Chez vous,\npartout et ailleurs"} imgUrl={homeHeroImg}/>
       <HomeGallery />
     </section>
   )
 }
-

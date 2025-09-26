@@ -1,0 +1,41 @@
+@use '@styles/abstracts/mixins' as *;
+
+.logement__carousel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .carousel__img{
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1.5rem;
+  }
+
+  button {
+    position: absolute;
+    top: 50%;
+    background-color: transparent;
+    transform: translateY(-50%);
+    padding: 5rem 1rem;
+    cursor: pointer;
+
+    
+
+    img {
+      width: 2rem;
+      @include respond-to(mobile) {
+        width: 0.8rem;
+      }
+    }
+
+    &:first-of-type {
+      left: 0.5rem;
+    }
+
+    &:last-of-type {
+      right: 0.5rem;
+    }
+  }
+}

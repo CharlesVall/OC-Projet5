@@ -1,6 +1,9 @@
+@use '@styles/abstracts/mixins' as *;
+
 .hero {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 4.2rem;
   border-radius: 1.5rem;
   background-color: rgba(0, 0, 0, 0.5);
@@ -8,4 +11,22 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  min-height: 10rem;
+  @include respond-to(mobile) {
+      padding: 1rem;
+      min-height: 5rem;
+    }
+  @include respond-to(small-mobile) {
+      white-space: pre-line;
+    }
+  .hero__title {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include respond-to(mobile) {
+      height: 100%;
+      font-size: 1.3rem;
+    }
+  }
 }

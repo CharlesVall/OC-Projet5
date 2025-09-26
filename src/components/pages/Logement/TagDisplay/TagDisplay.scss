@@ -1,0 +1,19 @@
+@use '@styles/abstracts/variables' as *;
+
+.tags-wrapper {
+  height: 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+  .tag {
+    display: flex;
+    min-width: 6rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 5px;
+    padding: 0.2rem;
+    border-radius: 0.7rem;
+    background-color: $main-color;
+  }
+}

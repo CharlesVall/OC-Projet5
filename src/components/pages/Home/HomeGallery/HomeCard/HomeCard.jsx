@@ -1,11 +1,9 @@
 import './HomeCard.scss'
 
-export default function Home () {
+export default function Home({ cover }) {
   return (
-    <a>
-      <article className="home__card">
-        <p>Titre de la location</p>
-      </article>
-    </a>
+    <article className="home__card" style={{ backgroundImage: `url(${cover})` }}>
+      <p>Titre de la location</p>
+    </article>
   )
 }

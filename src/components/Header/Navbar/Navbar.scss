@@ -1,14 +1,31 @@
+@use '@styles/abstracts/mixins' as *;
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 25%;
+  width: 15%;
   color: black;
+  @include respond-to(tablet) {
+    width: 20%;
+  }
+  @include respond-to(mobile) {
+    width: 35%;
+  }
+  @include respond-to(small-mobile) {
+    width: 40%;
+  }
 }
 
 .navbar__link {
   color: black;
   &--active {
     text-decoration: underline;
-  }  
+  }
+  @include respond-to(mobile) {
+    font-size: 1rem
+  }
+  @include respond-to(small-mobile) {
+    font-size: 0.7rem
+  }
 }
