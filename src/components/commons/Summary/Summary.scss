@@ -31,5 +31,8 @@
     white-space: pre-line;
     color: black;
     padding: 1rem;
+    ul {
+      list-style: none;
+    }
   }
 }

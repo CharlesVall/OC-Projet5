@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import logementList from '@/logements.json'
 
 export default function Home () {
-  const array = [logementList[0],logementList[1],logementList[2],logementList[3],logementList[4],logementList[5]]
+  const array = logementList
 
   return (
     <div className="home__gallery">

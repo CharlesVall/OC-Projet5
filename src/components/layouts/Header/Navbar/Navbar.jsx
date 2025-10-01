@@ -8,7 +8,7 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <NavLink to="/home" className={({ isActive }) => isActive ? "navbar__link navbar__link--active" : "navbar__link"}>
-        { isMobile ? 'ACCEUIL' : 'Accueil' }
+        { isMobile ? 'ACCUEIL' : 'Accueil' }
       </NavLink>
       <NavLink to="/about" className={({ isActive }) => isActive ? "navbar__link navbar__link--active" : "navbar__link"}>
         { isMobile ? 'A PROPOS' : 'À propos' }

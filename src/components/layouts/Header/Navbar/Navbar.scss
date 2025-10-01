@@ -4,16 +4,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 15%;
+  width: 10rem;
   color: black;
-  @include respond-to(tablet) {
-    width: 20%;
-  }
-  @include respond-to(mobile) {
-    width: 35%;
-  }
   @include respond-to(small-mobile) {
-    width: 40%;
+    width: 7.4rem;
   }
 }
 
@@ -26,6 +20,6 @@
     font-size: 1rem
   }
   @include respond-to(small-mobile) {
-    font-size: 0.7rem
+    font-size: 0.75rem
   }
 }
