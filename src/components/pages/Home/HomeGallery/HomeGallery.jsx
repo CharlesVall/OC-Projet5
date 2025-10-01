@@ -8,9 +8,9 @@ export default function Home () {
 
   return (
     <div className="home__gallery">
-      {array.map(iter => (
-        <Link to={`/logement/${iter.id}`} key={iter.id} >
-          <HomeCard cover={iter.cover}/>
+      {array.map(logement => (
+        <Link to={`/logement/${logement.id}`} key={logement.id} >
+          <HomeCard title={logement.title} cover={logement.cover}/>
         </Link> 
       ))}
     </div>
